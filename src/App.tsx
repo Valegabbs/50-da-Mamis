@@ -40,7 +40,7 @@ export default function App() {
   const handleSelect = (index: number) => {
     setSelectedIndex(index);
     const item = MENU_ITEMS[index];
-    window.location.href = item.url;
+    window.open(item.url, '_blank');
   };
 
   return (
